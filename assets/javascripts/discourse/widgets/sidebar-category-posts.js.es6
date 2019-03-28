@@ -59,7 +59,7 @@ export default createWidget('sidebar-category-posts', {
     } else {
       var category = Discourse.Category.findBySlug(attrs.category);
       result.push(h('div', {innerHTML: categoryBadgeHTML(category)}));
-      result.push(h('div.no-messages', 'No posts in this category.'))
+      result.push(h('div.no-messages', 'sidebar_blocks.no_post_in_category'))
     }
 
     return result;
