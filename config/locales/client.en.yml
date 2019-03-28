@@ -2,3 +2,9 @@ en:
   js: 
     sidebar_blocks: 
       recent_replies: "Recent replies"
+      no_recent_replies: "No recent replies."
+      leaderboard: "Leaderboard"
+      received: "Received"
+      no_users_loaded: "No users loaded."
+      user: "User"
+      no_post_in_category: "No posts in this category."
