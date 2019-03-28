@@ -48,7 +48,7 @@ createWidget('sidebar-leaderboard', {
 				'a', {
 					'attributes':{
 						'href':'/u',
-						'title':'Leaderboard'
+						'title':'sidebar_blocks.leaderboard'
 					}
 				},
 				'Leaderboard'
@@ -73,10 +73,10 @@ createWidget('sidebar-leaderboard', {
 					h("table", [
 					  h("tbody", [
 					    h("tr", [
-					      h("th", 'User'),
+					      h("th", 'sidebar_blocks.user'),
 					      h("th", [
 									iconNode('heart'),
-									h('span','Received')
+									h('span','sidebar_blocks.received')
 								])
 					    ]),
 					    users
@@ -85,7 +85,7 @@ createWidget('sidebar-leaderboard', {
 				)
 			);
 		} else {
-			result.push(h('div.no-messages', 'No users loaded.'))
+			result.push(h('div.no-messages', 'sidebar_blocks.no_users_loaded'))
 		}
 
 		return result;
