@@ -48,10 +48,10 @@ createWidget('sidebar-leaderboard', {
 				'a', {
 					'attributes':{
 						'href':'/u',
-						'title':'sidebar_blocks.leaderboard'
+						'title': I18n.t('sidebar_blocks.leaderboard')
 					}
 				},
-				'Leaderboard'
+				I18n.t('Leaderboard')
 			)
 		);
 	},
@@ -73,10 +73,10 @@ createWidget('sidebar-leaderboard', {
 					h("table", [
 					  h("tbody", [
 					    h("tr", [
-					      h("th", 'sidebar_blocks.user'),
+					      h("th", I18n.t('sidebar_blocks.user')),
 					      h("th", [
 									iconNode('heart'),
-									h('span','sidebar_blocks.received')
+									h('span', I18n.t('sidebar_blocks.received'))
 								])
 					    ]),
 					    users
@@ -85,7 +85,7 @@ createWidget('sidebar-leaderboard', {
 				)
 			);
 		} else {
-			result.push(h('div.no-messages', 'sidebar_blocks.no_users_loaded'))
+			result.push(h('div.no-messages', I18n.t('sidebar_blocks.no_users_loaded')))
 		}
 
 		return result;
