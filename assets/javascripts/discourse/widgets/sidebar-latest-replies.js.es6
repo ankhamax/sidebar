@@ -56,7 +56,7 @@ export default createWidget('sidebar-latest-replies', {
       const replies = state.posts.map(t => this.attach('sidebar-reply-item', t));
       result.push(replies);
     } else {
-      result.push(h('div.no-messages', 'sidebar_blocks.no_recent_replies'))
+      result.push(h('div.no-messages', I18n.t('sidebar_blocks.no_recent_replies')))
     }
 
     return result;
