@@ -51,7 +51,7 @@ createWidget('sidebar-leaderboard', {
 						'title': I18n.t('sidebar_blocks.leaderboard')
 					}
 				},
-				I18n.t('Leaderboard')
+				I18n.t('sidebar_blocks.leaderboardtitle')
 			)
 		);
 	},
